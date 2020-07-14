@@ -7,14 +7,14 @@ const HeaderStyles = styled.header`
   align-items: center;
   height: 60px;
   color: white;
+  padding-left: 32px;
+  padding-right: 32px
 `;
 
 const Header = () => (
   <HeaderStyles>
-    <div className="container">
-      <div>
-        Ingresa a Chat 
-      </div>
+    <div>
+      Ingresa a Chat 
     </div>
   </HeaderStyles>
 );
