@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import EntryChatForm from './EntryChatForm';
-import MainWrapper from '../../../components/wrappers/MainWrapper';
+import Layout from '../../../layout';
 import Avatar from '../../../images/avatar.png';
 
 const EntryChatImgContainer = styled.figure`
@@ -16,7 +16,7 @@ const EntryChatImg = styled.img`
 `;
 
 const EntryChatView = () => (
-  <MainWrapper>
+  <Layout>
     <div className="d-flex align-items-center justify-content-center">
       <div className='mt-5'>
         <EntryChatImgContainer>
@@ -25,7 +25,7 @@ const EntryChatView = () => (
         <EntryChatForm />
       </div>
     </div>
-  </MainWrapper>
+  </Layout>
 );
 
 export default EntryChatView;
