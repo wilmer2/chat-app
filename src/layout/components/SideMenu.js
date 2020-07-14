@@ -22,7 +22,7 @@ const SideMenuItem = styled.div`
   color: black;
 `;
 const SideMenu = () => (
-  <SideMenuContainer className="pt-3">
+  <SideMenuContainer className="pt-5">
     <SideMenuItemContainer className="mt-1">
       <Link to="/rooms">
         <SideMenuItem className="d-flex align-items-center ml-3">

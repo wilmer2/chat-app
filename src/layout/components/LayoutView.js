@@ -10,11 +10,11 @@ const WrapperSidebar = ({ children }) => (
   </div>
 );
 
-const LayoutView = ({ children }) => (
+const LayoutView = ({ children, isConnect }) => (
   <>
     <Header />
     <MainWrapper>
-      {children}
+      {!true ? children : <WrapperSidebar>{children}</WrapperSidebar>}
     </MainWrapper>
   </>
 );
