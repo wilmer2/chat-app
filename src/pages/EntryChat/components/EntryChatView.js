@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import EntryChatForm from './EntryChatForm';
-import Layout from '../../../layout';
 import Avatar from '../../../images/avatar.png';
 
 const EntryChatImgContainer = styled.figure`
