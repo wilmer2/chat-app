@@ -16,16 +16,14 @@ const EntryChatImg = styled.img`
 `;
 
 const EntryChatView = () => (
-  <Layout>
-    <div className="d-flex align-items-center justify-content-center">
-      <div className='mt-5'>
-        <EntryChatImgContainer>
-          <EntryChatImg src={Avatar} alt="Avatar" />
-        </EntryChatImgContainer>
-        <EntryChatForm />
-      </div>
+  <div className="d-flex align-items-center justify-content-center">
+    <div className='mt-5'>
+      <EntryChatImgContainer>
+        <EntryChatImg src={Avatar} alt="Avatar" />
+      </EntryChatImgContainer>
+      <EntryChatForm />
     </div>
-  </Layout>
+  </div>
 );
 
 export default EntryChatView;
