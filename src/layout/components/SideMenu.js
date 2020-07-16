@@ -34,8 +34,16 @@ const SideMenu = () => (
     <SideMenuItemContainer className="mt-1">
       <Link to="/users">
         <SideMenuItem className="d-flex align-items-center ml-3">
-          <i className="fas fa-users" />
+        <i class="far fa-user" />
           <div className="ml-2">Usuarios</div>
+        </SideMenuItem>
+      </Link>
+    </SideMenuItemContainer>
+    <SideMenuItemContainer className="mt-1">
+      <Link to="/chats">
+        <SideMenuItem className="d-flex align-items-center ml-3">
+          <i class="far fa-comments" />
+          <div className="ml-2">Chats</div>
         </SideMenuItem>
       </Link>
     </SideMenuItemContainer>
