@@ -11,12 +11,39 @@ const HeaderStyles = styled.header`
   padding-right: 32px
 `;
 
-const Header = () => (
-  <HeaderStyles>
-    <div>
-      Ingresa a Chat 
+const HeaderIcon = styled.div`
+  font-size: 20px;
+`;
+
+const HeaderAvatar = ({ nickName }) => {
+  if (!nickName) {
+    return (
+      <div>
+        Ingresa a Chat 
+      </div>
+    );
+  }
+  
+  return (
+    <div className="d-flex align-items-center pointer">
+      <HeaderIcon>
+        <i className="fas fa-user" />
+      </HeaderIcon>
+      <div className="ml-2 mt-1">{nickName}</div>
+      <div className="ml-1">
+        <i className="fas fa-sort-down" />
+      </div>
     </div>
-  </HeaderStyles>
-);
+  );
+}
+
+const Header = ({ nickName }) => {
+  return (
+    <HeaderStyles>
+      <HeaderAvatar nickName={nickName} />
+    </HeaderStyles>
+  );
+}
+  
 
 export default Header;

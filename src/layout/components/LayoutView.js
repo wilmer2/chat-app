@@ -11,9 +11,9 @@ const WrapperSidebar = ({ children }) => (
   </div>
 );
 
-const LayoutView = ({ children, isConnect }) => {
+const LayoutView = ({ children, isConnect, nickName }) => {
   const history = useHistory();
-  
+
   useEffect(() => {
     if (isConnect) {
       history.push('/rooms');
@@ -22,7 +22,7 @@ const LayoutView = ({ children, isConnect }) => {
 
   return (
     <>
-      <Header />
+      <Header nickName={nickName} />
       <MainWrapper>
         {!isConnect ? children : <WrapperSidebar>{children}</WrapperSidebar>}
       </MainWrapper>
