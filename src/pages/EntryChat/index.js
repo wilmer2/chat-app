@@ -1,3 +1,3 @@
-import EntryChatView from './components/EntryChatView';
+import EntryChatContainer from './containers/EntryChatContainer';
 
-export default EntryChatView;
+export default EntryChatContainer;

@@ -14,15 +14,20 @@ const EntryChatImg = styled.img`
   border-radius: 50%;
 `;
 
-const EntryChatView = () => (
-  <div className="d-flex align-items-center justify-content-center">
-    <div className='mt-5'>
-      <EntryChatImgContainer>
-        <EntryChatImg src={Avatar} alt="Avatar" />
-      </EntryChatImgContainer>
-      <EntryChatForm />
+const EntryChatView = ({ saveNickName, nickName }) => { 
+  return (
+    <div className="d-flex w-100 justify-content-center">
+      <div className='mt-5'>
+        <EntryChatImgContainer>
+          <EntryChatImg src={Avatar} alt="Avatar" />
+        </EntryChatImgContainer>
+        <EntryChatForm 
+          handleSaveNickName={saveNickName} 
+          nickName={nickName}
+        />
+      </div>
     </div>
-  </div>
-);
+  );
+}
 
 export default EntryChatView;

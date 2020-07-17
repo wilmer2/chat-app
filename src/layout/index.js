@@ -1,3 +1,3 @@
-import LayoutView from './components/LayoutView';
+import LayoutContainer from './containers/LayoutContainer';
 
-export default LayoutView;
+export default LayoutContainer;

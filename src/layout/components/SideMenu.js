@@ -34,7 +34,7 @@ const SideMenu = () => (
     <SideMenuItemContainer className="mt-1">
       <Link to="/users">
         <SideMenuItem className="d-flex align-items-center ml-3">
-        <i class="far fa-user" />
+        <i className="far fa-user" />
           <div className="ml-2">Usuarios</div>
         </SideMenuItem>
       </Link>
@@ -42,7 +42,7 @@ const SideMenu = () => (
     <SideMenuItemContainer className="mt-1">
       <Link to="/chats">
         <SideMenuItem className="d-flex align-items-center ml-3">
-          <i class="far fa-comments" />
+          <i className="far fa-comments" />
           <div className="ml-2">Chats</div>
         </SideMenuItem>
       </Link>
